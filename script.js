@@ -45,7 +45,7 @@ function calculateProgress() {
     percentage = percentage.toFixed(2);
 
     if (percentage >= 100) {
-        result.textContent = `🎉 Objective Achieved! You've saved ${saved} out of ${objective}.`;
+        result.textContent = `Objective Achieved! You've saved ${saved} out of ${objective}.`;
     } else {
         result.textContent = `Progress: ${percentage}% — ₹${objective - saved} left to complete your objective.`;
     }
