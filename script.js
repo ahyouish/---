@@ -1,4 +1,4 @@
-// MATRIX LOADER ANIMATION
+// MATRIX BACKGROUND ANIMATION
 const canvas = document.getElementById("matrixCanvas");
 const ctx = canvas.getContext("2d");
 
@@ -28,14 +28,7 @@ function drawMatrix() {
     }
 }
 
-let matrixInterval = setInterval(drawMatrix, 35);
-
-// Hide matrix after a few seconds
-setTimeout(() => {
-    document.getElementById("matrix-loader").style.display = "none";
-    document.getElementById("main-content").style.display = "block";
-    clearInterval(matrixInterval);
-}, 6000);
+setInterval(drawMatrix, 35);
 
 // SAVINGS PROGRESS FUNCTION
 function calculateProgress() {
@@ -56,4 +49,4 @@ function calculateProgress() {
     } else {
         result.textContent = `Progress: ${percentage}% — ₹${objective - saved} left to complete your objective.`;
     }
-           }
+}
