@@ -35,7 +35,7 @@ setTimeout(() => {
     document.getElementById("matrix-loader").style.display = "none";
     document.getElementById("main-content").style.display = "block";
     clearInterval(matrixInterval);
-}, 3000);
+}, 6000);
 
 // SAVINGS PROGRESS FUNCTION
 function calculateProgress() {
